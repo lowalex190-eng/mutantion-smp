@@ -1,0 +1,20 @@
+name: MutationSMP
+version: 1.0.0
+main: com.mutationsmp.MutationSMP
+api-version: '1.21'
+description: Every kill mutates you. Every mutation has a buff and a drawback.
+authors: [YourName]
+
+commands:
+  mutation:
+    description: View and manage mutations
+    usage: /<command> [list|info|check|give|remove|reroll|clear|reload]
+    aliases: [mut, mutations]
+
+permissions:
+  mutationsmp.use:
+    description: View mutations
+    default: true
+  mutationsmp.admin:
+    description: Give, remove, reroll and reload mutations
+    default: op

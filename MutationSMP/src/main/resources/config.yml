@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------
+#  MutationSMP config  (/mutation reload to apply changes)
+# ---------------------------------------------------------------
+
+# Maximum mutations a player can hold. When exceeded, the OLDEST one fades.
+max-mutations: 5
+
+# Give every new player one random mutation the first time they join.
+starting-mutation: true
+
+# When do players lose their newest mutation?
+#   ALL  = on every death (default)
+#   PVP  = only when killed by another player
+#   NONE = never
+lose-on-death: ALL
+
+# Does killing another player give a mutation?
+pvp-kill-gives-mutation: true
+
+# What does the killer get?
+#   RANDOM = a random mutation
+#   STEAL  = the mutation the victim just lost (falls back to random if the killer already has it)
+kill-reward-mode: RANDOM
+
+# Anti-farming: killing the SAME player again within this many seconds gives nothing.
+same-victim-cooldown-seconds: 600
+
+# Killing the Ender Dragon, Wither or Warden gives a random mutation.
+boss-kills-give-mutation: true
+
+# Announce every new mutation in chat (great for viewers/clips).
+broadcast-gains: true
+
+# Show each player's NEWEST mutation as an overlay on their armor.
+# Requires the MutationSMP resource pack (see README). Supported armor:
+# iron, gold, diamond, netherite, chainmail, copper.
+armor-overlay:
+  enabled: true
+
+# Per-mutation toggle and roll weight (higher weight = more common, 0 = never rolled).
+mutations:
+  brute_heart:    { enabled: true, weight: 10 }
+  glass_cannon:   { enabled: true, weight: 10 }
+  jittery_hands:  { enabled: true, weight: 10 }
+  feather_bones:  { enabled: true, weight: 10 }
+  lava_blood:     { enabled: true, weight: 8 }
+  night_stalker:  { enabled: true, weight: 10 }
+  speedster:      { enabled: true, weight: 10 }
+  stone_skin:     { enabled: true, weight: 10 }
+  vampiric:       { enabled: true, weight: 5 }
+  tiny_terror:    { enabled: true, weight: 8 }
+  titan_frame:    { enabled: true, weight: 5 }
+  magnetic_palms: { enabled: true, weight: 10 }
+  static_charge:  { enabled: true, weight: 8 }
+  berserker:      { enabled: true, weight: 5 }
+  gillborn:       { enabled: true, weight: 8 }
